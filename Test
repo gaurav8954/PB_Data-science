@@ -1,8 +1,0 @@
-fig = plt.figure()
-axes = fig.add_axes([0.1,0.1,0.9,0.9])
-axes.set_ylim(0,11**7)
-axes.bar(x,y)
-axes.set_xlabel('Month 2019')
-axes.set_ylabel('Amount in cr')
-for p in axes.patches:
-    axes.annotate(str(p.get_height()), (p.get_x() * 1.005, p.get_height() * 1.005))
